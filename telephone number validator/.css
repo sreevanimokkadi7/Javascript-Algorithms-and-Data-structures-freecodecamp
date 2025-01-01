@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#user-input, #check-btn, #clear-btn {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#check-btn, #clear-btn {
+    cursor: pointer;
+}
+
+#check-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#check-btn:hover {
+    background-color: #3e8e41;
+}
+
+#clear-btn {
+    background-color: #f00;
+    color: white;
+}
+
+#clear-btn:hover {
+    background-color: #d62828;
+}
+
+#results-div {
+    font-weight: bold;
+}
+
+function checkPhoneNumber() {
+  const userInput = document.getElementById('user-input').value; 
+
+  if (userInput.trim() === '') { 
+    alert("Please provide a phone number."); 
+  } else { 
+    // Your existing validation logic here 
+  }
+}

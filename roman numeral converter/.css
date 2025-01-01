@@ -1,0 +1,34 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#number, #convert-btn {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#convert-btn {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#convert-btn:hover {
+    background-color: #3e8e41;
+}
+
+#output {
+    font-weight: bold;
+}

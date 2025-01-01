@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Phone Number Validator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>US Phone Number Validator</h1>
+    <div class="container">
+        <input type="text" id="user-input" placeholder="Enter a phone number">
+        <button id="check-btn">Check Number</button>
+        <button id="clear-btn">Clear</button>
+        <p id="results-div"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Phone Number Validation</title>
+</head>
+<body>
+
+<input type="text" id="user-input" placeholder="Enter Phone Number">
+<button id="check-btn">Check</button>
+
+<script>
+  document.getElementById("check-btn").addEventListener("click", function() {
+    var phoneNumber = document.getElementById("user-input").value;
+
+    if (phoneNumber === "") {
+      alert("Please provide a phone number.");
+    } else {
+      // Add your phone number validation logic here
+      // For example:
+      // if (isValidPhoneNumber(phoneNumber)) {
+      //   alert("Valid phone number");
+      // } else {
+      //   alert("Invalid phone number");
+      // }
+    }
+  });
+</script>
+
+</body>
+</html>
